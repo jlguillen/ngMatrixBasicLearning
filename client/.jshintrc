@@ -1,0 +1,24 @@
+{
+  "extends": "../.jshintrc",
+  "node": false,
+  "browser": true,
+  "strict": true,
+  "maxlen": 0,
+  "globals": {
+    "google": true,
+    "module": true,
+    "require": true,
+    "angular": true,
+    "turf": true,
+    "rbush": true,
+    "knn": true,
+    "io": true,
+    "RichMarkerFactory": true,
+    "MarkerClusterer": true,
+    "DataLayerClusterer": true,
+    "InfoBubble": true,
+    "userData": true,
+    "_": true,
+    "moment": true
+  }
+}
