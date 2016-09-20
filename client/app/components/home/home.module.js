@@ -1,4 +1,4 @@
 (function() {
   'use strict';
-  angular.module('home', ['ejercicio1']);
+  angular.module('home', []);
 })();
