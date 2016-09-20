@@ -1,9 +1,50 @@
 <section id="content" class="{{section}}">
-	<p>Esa es la sección {{section}}.</p>
-			<ul>
-				<li><a class="ej1" ng-click="activateEjercicio1 = !activateEjercicio1" href="#">EJERCICIO 1</a></li>
-				<li><a class="ej2" ng-click="activateEjercicio2 = true" href="#">EJERCICIO 2</a></li>
-				<li><a class="ej3" ng-click="activateEjercicio3 = true" href="#">EJERCICIO 3</a></li>
-				<li><a class="ej4" ng-click="activateEjercicio4 = true" href="#">EJERCICIO 4</a></li>
-			</ul>
+  <p>Esa es la sección
+    {{section}}.</p>
+  <ul>
+    <li>
+      <a class="ej1" ng-click="activateEjercicio1 = !activateEjercicio1" href="#">EJERCICIO 1</a>
+    </li>
+    <li>
+      <a class="ej2" ng-click="activateEjercicio2 = !activateEjercicio2" href="#">EJERCICIO 2</a>
+    </li>
+    <li>
+      <a class="ej3" ng-click="activateEjercicio3 = !activateEjercicio3" href="#">EJERCICIO 3</a>
+    </li>
+    <li>
+      <a class="ej4" ng-click="activateEjercicio4 = !activateEjercicio4" href="#">EJERCICIO 4</a>
+    </li>
+  </ul>
+  <section id="ejercicio1" ng-if="activateEjercicio1" class="">
+    <p>
+      Crea una directiva llamada
+      <span>ejercicio1</span>
+      que, al clickar en este mismo botón, despliegue un formulario que contenga los siguientes campos:
+      <ul>
+        <li>
+          <p>
+            Teléfono: validando mediante regExp que contenga 9 dígitos.
+          </p>
+        </li>
+        <li>
+          <p>
+            DNI: validando mediante regExp que contenga 8 dígitos y 1 letra mayúscula.
+          </p>
+        </li>
+        <li>
+          <p>
+            Una serie de radio buttons, campo obligatorio.
+          </p>
+        </li>
+        <li>
+          <p>
+            Una serie de checkbox, obligatorio al menos 2 de ellos.
+          </p>
+        </li>
+      </ul>
+    </p>
+  </section>
+  <section id="ejercicio2" ng-if="activateEjercicio2" class=""></section>
+  <section id="ejercicio3" ng-if="activateEjercicio3" class=""></section>
+  <section id="ejercicio4" ng-if="activateEjercicio4" class=""></section>
 </section>
