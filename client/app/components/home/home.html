@@ -1,3 +1,13 @@
 <section id="content" class="{{section}}">
 	<p>Esa es la sección {{section}}.</p>
+			<ul>
+				<li><a class="ej1" ng-click="activateEjercicio1 = !activateEjercicio1" href="#">EJERCICIO 1</a></li>
+				<li><a class="ej2" ng-click="activateEjercicio2 = true" href="#">EJERCICIO 2</a></li>
+				<li><a class="ej3" ng-click="activateEjercicio3 = true" href="#">EJERCICIO 3</a></li>
+				<li><a class="ej4" ng-click="activateEjercicio4 = true" href="#">EJERCICIO 4</a></li>
+			</ul>
+			<ejercicio1 ng-if="activateEjercicio1" class=""></ejercicio1>
+			<ejercicio2 ng-if="activateEjercicio2" class=""></ejercicio2>
+			<ejercicio3 ng-if="activateEjercicio3" class=""></ejercicio3>
+			<ejercicio4 ng-if="activateEjercicio4" class=""></ejercicio4>
 </section>
